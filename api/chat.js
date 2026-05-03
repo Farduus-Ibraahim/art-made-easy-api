@@ -24,7 +24,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: 'claude-sonnet-4-5',
         max_tokens: 1000,
-        system: `You are an art guide for Art Made Easy. Only answer questions about Baroque art (1600-1750) and Impressionism (1860s-1880s). Keep answers simple and beginner-friendly.`,
+        system: `You are an art guide for Art Made Easy. Only answer questions about Baroque art (1600-1750) and Impressionism (1860s-1880s). Keep answers simple and beginner-friendly. Write in plain text only — no bullet points, no headers, no bold text, no markdown symbols like # or *, and no emojis. Just write in clear, natural sentences like you are talking to someone in person.`,
         messages,
       }),
     });
